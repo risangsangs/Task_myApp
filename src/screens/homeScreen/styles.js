@@ -1,18 +1,17 @@
 import { StyleSheet } from "react-native";
 import normalize from "react-native-normalize";
-import { palettes } from "../../utils/palettes";
-import { fonts } from "../../utils/fonts";
 
 const styles = StyleSheet.create({
     container: {
         paddingTop: normalize(50, "height"),
         paddingHorizontal: normalize(30, "width"),
-        backgroundColor: palettes.default.contentSecondary,
+        backgroundColor: '#E0DFDD',
         flex: 1,
     },
     headerTitle: {
-        ...fonts.lgGiantTitle,
-        color: palettes.default.text,
+        fontSize: 50,
+        fontFamily: "Urbanist_600SemiBold",
+        color: '#000000',
         marginTop: 25
     },
     headerProfile: {
@@ -27,11 +26,13 @@ const styles = StyleSheet.create({
     },
     headerAboutPurpose: {
         width: 125,
-        ...fonts.cst01,
-        color: palettes.default.text,
+        fontSize: 12,
+        fontFamily: "Urbanist_500Medium",
+        color: '#000000',
     },
     headerAboutName: {
-        ...fonts.lgSubGiant,
+        fontSize: 40,
+        fontFamily: "Urbanist_600SemiBold",
         textAlign: "right"
     },
     scrollNotif: {
@@ -44,20 +45,22 @@ const styles = StyleSheet.create({
     scrollNotifImg: {
         width: 65,
         height: 65,
-        backgroundColor: palettes.default.contentPrimary,
+        backgroundColor: '#FFFFFF',
         borderRadius: 10,
         justifyContent: "center",
         alignItems: "center",
     },
     scrollNotifText: {
-        ...fonts.cst01,
+        fontSize: 12,
+        fontFamily: "Urbanist_500Medium",
         width: 150,
         textAlign: "right"
     },
     projectTitleContainer: {
         marginTop: 25,
-        ...fonts.lgSubTitle,
-        color: palettes.default.text
+        fontSize: 20,
+        fontFamily: "Urbanist_600SemiBold",
+        color: '#000000'
     },
     projectContainer: {
         paddingVertical: 20,
@@ -71,12 +74,14 @@ const styles = StyleSheet.create({
         gap: 3,
     },
     titleProject: {
-        ...fonts.md4,
-        color: palettes.default.text
+        fontSize: 16,
+        fontFamily: "Urbanist_600SemiBold",
+        color: '#000000'
     },
     descProject: {
-        ...fonts.md2,
-        color: palettes.default.text
+        fontSize: 14,
+        fontFamily: "Urbanist_500Medium",
+        color: '#000000'
     },
     projectBtn: {
         flexDirection: "row",
@@ -84,7 +89,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     projectBtnText: {
-        ...fonts.md3,
+        fontSize: 14,
+        fontFamily: "Urbanist_600SemiBold",
         textDecorationLine: 'underline',
     },
     footerContainer: {
@@ -95,7 +101,7 @@ const styles = StyleSheet.create({
     },
     footer: {
         borderWidth: 1,
-        borderColor: palettes.default.contentPrimary,
+        borderColor: '#FFFFFF',
         width: 75,
         height: 35,
         borderRadius: 8,
@@ -103,8 +109,9 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     footerText: {
-        ...fonts.md3,
-        color: palettes.default.text,
+        fontSize: 14,
+        fontFamily: "Urbanist_600SemiBold",
+        color: '#000000',
     }
 });
 

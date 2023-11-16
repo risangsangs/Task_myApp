@@ -1,11 +1,8 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet} from "react-native";
-import normalize from "react-native-normalize";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { palettes } from "./src/utils/palettes";
 import LoginScreen from "./src/screens/loginScreen";
 import RegisterScreen from "./src/screens/registerScreen";
 import HomeScreen from "./src/screens/homeScreen";
@@ -35,10 +32,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: palettes.default.contentPrimary,
-    marginTop: normalize(35, "height"),
-  },
-});
